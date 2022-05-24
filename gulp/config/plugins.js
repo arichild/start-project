@@ -1,5 +1,1 @@
-import replace from 'gulp-replace';
-
-export const plugins = {
-  replace: replace,
-}
+// here you can upload some plugins for better work
