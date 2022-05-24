@@ -35,7 +35,7 @@
 
 Создать в **src папку fonts** куда нужно закинуть все файлы
 
-Перейти в файл **gulpfile.js** и раскомментировать эту строчку 
+Перейти в файл **gulpfile.js** и раскомментировать эту строку
 
 ```
 // @task: + fonts.js
@@ -63,7 +63,7 @@ Gulp создаст в *dist/images/svg* файл symbols.svg в котором 
 
 В **папке images создать папку svg**, куда закидываем все svg файлы
 
-Перейти в файл **gulpfile.js** и раскомментировать эту строчку 
+Перейти в файл **gulpfile.js** и раскомментировать эту строку 
 
 ```
 // @task: + svgSprite.js
@@ -79,7 +79,7 @@ const baseTasks = gulp.parallel(html, scss, js, img)
 
 ## Если нужно воспользоваться одновременно svgSprite и fonts
 
-В **gulpfile.js** раскомментировать эту строчку 
+В **gulpfile.js** раскомментировать эту строку 
 
 ```
 // @task: fonts.js + svgSprite.js
