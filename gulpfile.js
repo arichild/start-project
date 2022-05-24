@@ -25,13 +25,20 @@ function watcher() {
   gulp.watch(path.watch.svg, svg);
 }
 
-// Последовательная обработака шрифтов
-const fonts = gulp.series(otfToTtf, ttfToWoff, fonstStyle);
+const fonts = gulp.series(otfToTtf, ttfToWoff, fonstStyle); // Последовательная обработака шрифтов
+const svgSprite = gulp.series(svg);
 
-const baseTasks = gulp.parallel(html, scss, js, img, svg)
+// базовые задачи
+const baseTasks = gulp.parallel(html, scss, js, img)
 
-// + внешние шрифты
+// @task: + fonts.js
 // const baseTasks = gulp.series(fonts, gulp.parallel(html, scss, js, img, svg))
+
+// @task: + svgSprite.js
+// const baseTasks = gulp.series(svgSprite, gulp.parallel(html, scss, js, img, svg))
+
+// @task: fonts.js + svgSprite.js
+// const baseTasks = gulp.series(fonts, svgSprite, gulp.parallel(html, scss, js, img, svg))
 
 const dev = gulp.series(reset, htaccess, baseTasks, watcher)
 
