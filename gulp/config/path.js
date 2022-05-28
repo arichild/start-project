@@ -20,7 +20,7 @@ export const path = {
     scss: `${srcFolder}/scss/style.scss`,
     js: `${srcFolder}/js/*.js`,
     img: `${srcFolder}/images/**/*.*`,
-    fonts: `${srcFolder}/images/fonts/*.*`,
+    fonts: `${srcFolder}/fonts/*.*`,
     svg: `${srcFolder}/images/svg/*.svg`,
     htaccess: `${srcFolder}/.htaccess`,
   },
