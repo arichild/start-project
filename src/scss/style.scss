@@ -4,10 +4,12 @@
 @import "./base/grid.scss";
 @import "./base/mixin.scss";
 
+/* layout */
+@import "./layout/inc-header.scss";
+@import "./layout/inc-footer.scss";
+
 /* pages */
-@import "inc-header";
 @import "index";
-@import "inc-footer";
 
 * {
   box-sizing: border-box;
