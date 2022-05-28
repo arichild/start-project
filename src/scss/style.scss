@@ -1,10 +1,10 @@
-// base
-@import "grid.scss";
+/* base */
 @import "vars.scss";
-@import "mixin.scss";
 @import "typography.scss";
+@import "grid.scss";
+@import "mixin.scss";
 
-// pages
+/* pages */
 @import "inc-header";
 @import "index";
 @import "inc-footer";
@@ -31,6 +31,7 @@ body {
   font-family: $baseFont;
   font-weight: 400;
   font-size: rem(16px);
+  line-height: 1.42;
   color: #000;
   background-color: #fff;
 }
