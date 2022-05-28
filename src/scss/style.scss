@@ -1,8 +1,8 @@
 /* base */
-@import "vars.scss";
-@import "typography.scss";
-@import "grid.scss";
-@import "mixin.scss";
+@import "./base/vars.scss";
+@import "./base/typography.scss";
+@import "./base/grid.scss";
+@import "./base/mixin.scss";
 
 /* pages */
 @import "inc-header";
