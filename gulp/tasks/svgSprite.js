@@ -7,7 +7,9 @@ export const svg = () => {
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
+        $('[class]').removeAttr('class');
       },
       parserOptions: { xmlMode: true }
     }))
